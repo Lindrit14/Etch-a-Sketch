@@ -1,0 +1,21 @@
+body {
+    margin: 20px;
+}
+
+.mainContainer {
+    height: 300px;
+    width: 975px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.pixel {
+    height: 60px;
+    width: 60px;
+    background-color: red;
+}
+
+.pixel:hover {
+    background-color: green;
+}
