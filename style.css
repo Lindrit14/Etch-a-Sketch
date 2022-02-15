@@ -20,6 +20,11 @@ button {
     height: 50px;
     padding: 0 25px;
 }
+
+#gridRange {
+    color: #c2fbd7;
+}
+
 .mainContainer {
     margin-top: 40px;
     height: auto;
