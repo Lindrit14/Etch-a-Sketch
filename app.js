@@ -7,6 +7,7 @@ const buttonChangeBackground = document.querySelector(".changeBackground")
 const colorPicker = document.getElementById("colorPicker");
 const widthMainContainer = document.getElementById("propertyMainContainer").clientWidth;
 const gridRange = document.querySelector("#gridRange");
+const rangeValueText = document.querySelector(".rangeValue");
 
 
 function renderFirstTimeGrid(){
@@ -64,8 +65,12 @@ gridRange.addEventListener("click", (e)=>{
     removeGrid();
     renderNewGrid(); 
     changeColor();
-    console.log(e.target.value)
+    rangeValueText.textContent = e.target.value
 });
+
+
+
+
 window.onload = renderFirstTimeGrid();
 window.onload = changeColor();
 

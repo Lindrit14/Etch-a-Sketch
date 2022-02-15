@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Etch-A-Sketsh</h1>
     <div class="tempButtonGroup">
-        <button   role="button" class="remove">Click Here to Remove The Divs</button>
-        <button   role="button" class="changeBackground">Click Here to Change the Background</button>
+        
         <input type="color" name="test" id="colorPicker">
     </div>
 
     <div id="propertyMainContainer" class="mainContainer"></div>
 
 
-    <div><input type="range" name="gridRange" id="gridRange" min="1" max="64" value="56" step="2"></div>
-<script src="app.js"></script>
+    <div class="rangeContainer">
+        <input type="range"id="gridRange" name="gridRange" min="10" max="60" value="16" step="10">
+        
+        <p class="rangeValue">16</p>
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
