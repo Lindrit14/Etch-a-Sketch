@@ -6,24 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0cb417186.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <h1>Etch-A-Sketsh</h1>
-    <div class="tempButtonGroup">
+    <div class="headingContainer">
+        <h1>Etch-A-Sketsh</h1>
+    </div>
+    
+    <div class="outerContainer">
         
+    <div class="leftContainer">
         <input type="color" name="test" id="colorPicker">
-    </div>
-
-    <div id="propertyMainContainer" class="mainContainer"></div>
-
-
-    <div class="rangeContainer">
-        <input type="range"id="gridRange" name="gridRange" min="10" max="60" value="16" step="10">
+        <button class="draw"><i class="fas fa-pencil-alt fa-2x"></i></button>
+        <button class="eraser"><i class="fas fa-eraser fa-2x"></i></button>
+        <button class="clearBoard"><i class="far fa-trash-alt fa-2x"></i></button>
         
-        <p class="rangeValue">16</p>
+        
+        <div class="rangeContainer">
+            <input type="range"id="gridRange" name="gridRange" min="0" max="60"  step="10">
+            <p class="rangeValue">16</p>
+        </div>
     </div>
 
-
+    <div class="rightContainer">
+        
+        
+        <div id="propertyMainContainer" class="gridContainer"></div>
+        
+    </div>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
