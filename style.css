@@ -1,15 +1,12 @@
 body {
-    height: 95vh;
+    height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
 }
 
 button {
     width: 100px;
-
     background-color: #c2fbd7;
     border-radius: 15px;
     border-width: 0;
@@ -22,8 +19,14 @@ button {
     height: 50px;
     padding: 0 25px;
 }
-
-.outerContainer {
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+}
+.middleContainer {
     width: 800px;
     display: flex;
     gap: 40px;
@@ -38,12 +41,6 @@ button {
     align-items: center;
     justify-content: center;
     gap: 30px;
-}
-.rightContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .gridContainer {
@@ -69,4 +66,14 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.footer {
+    padding: 50px;
+    font-size: 15px;
+    background-color: #e6fdef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
