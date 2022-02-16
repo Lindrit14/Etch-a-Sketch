@@ -13,5 +13,6 @@ Having many small function that combine and do a bigger thing. kinda like functi
 ## Things do upgrade:
 
 A fill option
+make it clear on which "mode" the user is currently on: highlight the button
 make the input type="range" not as buggy as it is.
 some sort of exporting the image after it is drawn
