@@ -88,14 +88,14 @@ function eraser(){
     const newDiv = document.querySelectorAll(".pixel");
     newDiv.forEach((div)=>{
         div.addEventListener("mousedown", ()=>{
-            div.style.backgroundColor = "#FFFFFF";
+            div.style.backgroundColor = "#d3d3d3";
         })
         div.addEventListener("mouseover", (e) => {
             
             if(e.type === "mouseover" && !mouseDown){
                 return;
             }else {
-                div.style.backgroundColor = "#FFFFFF";
+                div.style.backgroundColor = "#d3d3d3";
             }
         })
     }
